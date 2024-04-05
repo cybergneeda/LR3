@@ -17,9 +17,9 @@ public class ParameterizedMethodTest {
         this.matrix = matrix;
     }
     @Parameters
-    public static Collection<Object[][]> data()
+    public static Collection<Object[]> data()
     {
-        return Arrays.asList(new Object[][][]
+        return Arrays.asList(new Object[][]
         {
            {new int [][]{{1,4,7},{3,3,4},{1,3,4}}},
            {new int[][]{{4,9,2},{6,1,5},{4,1,2}}},
