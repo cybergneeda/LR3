@@ -21,11 +21,11 @@ public class ParameterizedMethodTest {
     {
         return Arrays.asList(new Object[][][]
         {
-           {{1,4,7},{3,3,4},{1,3,4}},
-           {{4,9,2},{6,1,5},{4,1,2}},
-           {{7,4,9},{1,4,1},{1,4,1}},
-           {{5,4,9},{9,2,3},{5,2,3}},
-           {{9,9,1},{3,4,8},{5,8,3}},
+           {new int [][]{{1,4,7},{3,3,4},{1,3,4}}},
+           {new int[][]{{4,9,2},{6,1,5},{4,1,2}}},
+           {new int[][]{{7,4,9},{1,4,1},{1,4,1}}},
+           {new int[][]{{5,4,9},{9,2,3},{5,2,3}}},
+           {new int [][]{{9,9,1},{3,4,8},{5,8,3}}},
         });
     }
     @Test
@@ -33,5 +33,4 @@ public class ParameterizedMethodTest {
     {
         Assert.assertArrayEquals(matrix[2], Methods.leastOfPairs(matrix[0], matrix[1]));
     }
-
 }
